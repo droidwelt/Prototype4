@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ly_cltView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical"
+        android:id="@+id/ly_cltViewHdr">
+
+        <TextView
+            android:id="@+id/tv_cltview_lclt_name"
+            style="?textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main"
+            android:text="@string/report_cltview_clt" />
+
+        <TextView
+            android:id="@+id/et_cltview_clt_name"
+            style="?textMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:selectAllOnFocus="false" />
+
+        <TextView
+            android:id="@+id/tv_cltview_clt_phone"
+            style="?textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main"
+            android:text="@string/report_cltview_phone" />
+
+        <TextView
+            android:id="@+id/et_cltview_clt_phone"
+            style="?textMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:id="@+id/tv_cltview_clt_addr"
+            style="?textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main"
+            android:text="@string/report_cltview_addr" />
+
+        <TextView
+            android:id="@+id/et_cltview_clt_addr"
+            style="?textMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:id="@+id/tv_cltview_lclt_saldo"
+            style="?textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main"
+            android:text="@string/report_cltview_saldo" />
+
+        <TextView
+            android:id="@+id/et_cltview_clt_saldo"
+            style="?textMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="?textMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="10"
+                android:text="@string/report_cltview_oper" />
+
+            <TextView
+                android:id="@+id/tv2"
+                style="?textMedium"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="10"
+                android:text="@string/report_cltview_date" />
+
+            <TextView
+                android:id="@+id/tv3"
+                style="?textMedium"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="@string/report_opl_name" />
+
+            <TextView
+                android:id="@+id/tv4"
+                style="?textMedium"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="@string/report_cltview_sum" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" />
+</LinearLayout>

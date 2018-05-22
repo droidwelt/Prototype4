@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoiceFioActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_choicefio_sendlist"
+                style="?textMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="получатели сообщения" />
+
+            <ImageView
+                android:id="@+id/ivv1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+
+            <ImageButton
+                android:id="@+id/ib_choicefio_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/background_transparent"
+                android:src="@mipmap/ic_refresh" />
+
+            <ImageView
+                android:id="@+id/ivv2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+
+            <ImageButton
+                android:id="@+id/ib_choicefio_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/background_transparent"
+                android:src="@mipmap/ic_checked" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_choicefio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_transparent"
+            android:fadeScrollbars="true"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

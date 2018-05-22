@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/activatedBackgroundIndicator"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_client_item_CLT_NAME"
+            style="?textMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:padding="4dp"
+            android:text="clt_name" />
+
+        <TextView
+            android:id="@+id/text_item_client_CLT_DOLG"
+            style="?textMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:padding="4dp"
+            android:text="clt_dolg" />
+
+        <TextView
+            android:id="@+id/text_item_client_CLT_AVANS"
+            style="?textMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:padding="4dp"
+            android:text="clt_avans" />
+    </LinearLayout>
+</LinearLayout>

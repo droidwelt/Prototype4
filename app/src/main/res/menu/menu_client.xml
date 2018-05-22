@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mi_client_download"
+        android:icon="@mipmap/ic_exchange_transfer"
+        android:title="@string/text_display_table"
+        android:titleCondensed="@string/text_display_table"
+        app:showAsAction="always|withText" />
+
+
+</menu>

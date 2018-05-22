@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ru.droidwelt.prototype4"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+
+        android:name="ru.droidwelt.prototype4.Appl"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme.Medium"
+        tools:ignore="GoogleAppIndexingWarning">
+
+
+
+        <activity
+            android:name="ru.droidwelt.prototype4.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ru.droidwelt.prototype4.ChoiceMemuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.MsaMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="ru.droidwelt.prototype4.MsaEditActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="ru.droidwelt.prototype4.MsaAvatarActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="ru.droidwelt.prototype4.ChoiceFioActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.EnterPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.MsaFilterLblActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.ChoiceMsaActionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.TskStateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.VerifyDbActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.ChoiceClrActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.ChoiceLblActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.RegisterDBActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="ru.droidwelt.prototype4.RegisterDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="ru.droidwelt.prototype4.ClientActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="ru.droidwelt.prototype4.ClientViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ru.droidwelt.prototype4.InspActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="ru.droidwelt.prototype4.PrefActivity"
+            android:label="@string/action_settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ru.droidwelt.prototype4.OplActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="ru.droidwelt.prototype4.PriceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="ru.droidwelt.prototype4.TskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ru.droidwelt.prototype4.TskViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="ru.droidwelt.prototype4.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.ReduceImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.InspInputActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="ru.droidwelt.prototype4.ChoiceTemplate"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="ru.droidwelt.prototype4.MyFirebaseInstanceIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="ru.droidwelt.prototype4.MyFcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase." />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

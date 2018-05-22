@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_tskstate_1"
+        style="?textMedium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="8dp"
+        android:background="@color/background_main"
+        android:gravity="left"
+        android:text="выберите состояние задачи" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_text"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup_tskstate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rb_tskstate_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="задано" />
+
+            <RadioButton
+                android:id="@+id/rb_tskstate_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="10"
+                android:text="принято" />
+
+            <RadioButton
+                android:id="@+id/rb_tskstate_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="10"
+                android:text="работа" />
+
+            <RadioButton
+                android:id="@+id/rb_tskstate_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="10"
+                android:text="отказ" />
+
+            <RadioButton
+                android:id="@+id/rb_tskstate_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="10"
+                android:text="выполнено" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/ImageView08"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/splitter_horisontal" />
+
+        <Button
+            android:id="@+id/button_tskstate_ok"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:layout_weight="20"
+            android:background="@color/background_button"
+            android:text="@string/s_ok" />
+
+    </LinearLayout>
+</LinearLayout>

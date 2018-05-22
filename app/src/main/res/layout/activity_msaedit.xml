@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".MsaEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/tb_mes_edit"
+                    style="?textSmall"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    app:contentInsetStart="0dp"
+                    app:title=" ">
+
+                    <TextView
+                        android:id="@+id/tv_mes_edit_title"
+                        style="?textTitle"
+                        android:text="@string/s_message_edit" />
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    style="?textLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:hint="заголовок сообщения"
+                    android:text="@string/s_message_title" />
+
+                <EditText
+                    android:id="@+id/et_mesedit_title"
+                    style="?textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="заголовок сообщения"
+                    android:inputType="textMultiLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_mesedit_fio"
+                        style="?textMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="отправитель" />
+
+                    <TextView
+                        android:id="@+id/tv_mesedit_datetime"
+                        style="?textMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="дата, время" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:elevation="1dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/ib_mesedit_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_transparent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@mipmap/q_filter" />
+
+                <ImageButton
+                    android:id="@+id/ib_mesedit_clr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_transparent"
+                    android:elevation="1dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@mipmap/ic_edit_set_clr" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_mesedit_fio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@color/background_transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/ic_avatar_unknown" />
+
+            <TextView
+                android:id="@+id/tv_mesedit_send"
+                style="?textMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="выберите получателей сообщения"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    style="?textLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/s_message_text" />
+
+                <EditText
+                    android:id="@+id/et_mesedit_text"
+                    style="?textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:inputType="textMultiLine">
+
+                    <requestFocus />
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/iv_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/splitter_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_mesedit_filename"
+                        style="?textSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="название файла"
+                        android:inputType="textMultiLine"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_mesedit_imagesize"
+                        style="?textSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="text"
+                        tools:ignore="TextViewEdits" />
+
+                    <TextView
+                        android:id="@+id/tv_mesedit_filetype"
+                        style="?textSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="тип"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <ru.droidwelt.prototype4.TouchImageView
+                    android:id="@+id/tiv_msa_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/background_transparent"
+                    android:src="@mipmap/ic_filetype_image_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

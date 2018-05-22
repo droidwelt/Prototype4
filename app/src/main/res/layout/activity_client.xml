@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ClientActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/tb_clt"
+                    style="?textSmall"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    app:contentInsetStart="0dp"
+                    app:title=" ">
+
+                    <ImageButton
+                        android:id="@+id/ib_clt_mainmenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_transparent"
+                        android:elevation="1dp"
+                        app:srcCompat="@mipmap/ic_mainmenu" />
+
+                    <TextView
+                        style="?textTitle"
+                        android:text="@string/header_client" />
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_ClientLastLoad"
+            style="?textSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main"
+            android:padding="4dp"
+            tools:text="Small Text" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <EditText
+            android:id="@+id/client_edit_Filter"
+            style="?textInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:ems="10"
+            android:hint="@string/s_search"
+            android:inputType="textNoSuggestions">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/iv_mesitem_filetype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="start"
+                android:text="название клиента" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:background="@color/background_main"
+                android:gravity="right"
+                android:text="долг" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="10"
+                android:background="@color/background_main"
+                android:gravity="right"
+                android:text="аванс" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

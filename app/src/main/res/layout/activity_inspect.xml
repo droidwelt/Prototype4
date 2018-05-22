@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".InspActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ins_scanner_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        app:backgroundTint="@color/color_tint_msa_fab_key"
+        app:srcCompat="@mipmap/ic_fab_scanner" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ins_add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@color/color_tint_msa_fab_key"
+        app:srcCompat="@mipmap/ic_fab_add" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/tb_insp"
+                    style="?textSmall"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    app:contentInsetStart="0dp"
+                    app:title=" ">
+
+                    <ImageButton
+                        android:id="@+id/ib_insp_mainmenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_transparent"
+                        android:elevation="1dp"
+                        app:srcCompat="@mipmap/ic_mainmenu" />
+
+                    <TextView
+                        style="?textTitle"
+                        android:text="@string/header_inspect" />
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_InspectLastLoad"
+            style="?textSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main"
+            android:padding="4dp"
+            tools:text="Small Text" />
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <EditText
+            android:id="@+id/editText_inspect_Filter"
+            style="?textInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:ems="10"
+            android:hint="@string/s_search" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main">
+
+            <TextView
+                android:id="@+id/textView_tovar_1"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="6"
+                android:text="@string/report_tov_name" />
+
+            <TextView
+                android:id="@+id/textView_tovar_3"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="документ" />
+
+            <TextView
+                android:id="@+id/textView_tovar_4"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="факт" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_inspect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

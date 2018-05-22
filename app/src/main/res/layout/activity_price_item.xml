@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_item_PRN_NAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="6"
+            style="?textMedium"
+            android:text="prn_name" />
+
+        <TextView
+            android:id="@+id/textView_item_PRN_CENA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="10"
+            android:gravity="right"
+            style="?textMedium"
+            android:text="cena" />
+
+        <TextView
+            android:id="@+id/textView_item_PRN_OST"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="10"
+            android:gravity="right"
+            style="?textMedium"
+            android:text="ost" />
+
+        <TextView
+            android:id="@+id/textView_item_PRN_RES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="10"
+            android:gravity="right"
+            style="?textMedium"
+            android:text="res" />
+    </LinearLayout>
+</LinearLayout>

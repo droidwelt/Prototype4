@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+    <item android:state_activated="true" android:drawable="@drawable/list_item_nav_bar" />
+    <item android:state_pressed="true" android:drawable="@color/color_list_pressed" />
+    <item android:state_selected="true" android:drawable="@color/color_list_pressed" />
+    <item android:drawable="@color/color_list_normal" />
+
+</selector>

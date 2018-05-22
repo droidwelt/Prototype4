@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".PriceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/tb_clt"
+                    style="?textSmall"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    app:contentInsetStart="0dp"
+                    app:title=" ">
+
+                    <ImageButton
+                        android:id="@+id/ib_clt_mainmenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_transparent"
+                        android:elevation="1dp"
+                        app:srcCompat="@mipmap/ic_mainmenu" />
+
+                    <TextView
+                        style="?textTitle"
+                        android:text="@string/header_price" />
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_PriceLastLoad"
+            style="?textSmall"
+            android:layout_width="match_parent"
+            android:background="@color/background_main"
+            android:padding="4dp"
+            android:text="text" />
+
+        <ImageView
+            android:id="@+id/iv_mesitem_filetype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <EditText
+            android:id="@+id/editText_price_Filter"
+            style="?textInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:ems="10"
+            android:hint="@string/s_search" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main">
+
+            <TextView
+                android:id="@+id/textView_tovar_1"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="6"
+                android:text="@string/report_tov_name" />
+
+            <TextView
+                android:id="@+id/textView_tovar_2"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="@string/report_tov_cena" />
+
+            <TextView
+                android:id="@+id/textView_tovar_3"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="@string/report_tov_ost" />
+
+            <TextView
+                android:id="@+id/textView_tovar_4"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="@string/report_tov_res" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

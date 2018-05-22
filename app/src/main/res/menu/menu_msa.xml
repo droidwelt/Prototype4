@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mi_mes_new"
+        android:icon="@mipmap/ic_message_new"
+        android:orderInCategory="1"
+        android:title="@string/s_message_new"
+        android:titleCondensed="@string/s_message_new"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/mi_mes_action"
+        android:icon="@mipmap/ic_mes_action"
+        android:orderInCategory="2"
+        android:title="@string/s_message_action"
+        android:titleCondensed="@string/s_message_action"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/mi_mes_receive_all"
+                android:icon="@mipmap/ic_message_receive_all"
+                android:title="@string/s_message_receive_all"
+                android:titleCondensed="@string/s_message_receive_all"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_send_all"
+                android:icon="@mipmap/ic_message_send_all"
+                android:title="@string/s_message_send_all"
+                android:titleCondensed="@string/s_message_send_all"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_delete_all"
+                android:icon="@mipmap/ic_message_delete_all"
+                android:title="@string/s_message_delete_all"
+                android:titleCondensed="@string/s_message_delete_all"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_move_all_to_inbox"
+                android:icon="@mipmap/ic_message_to_draft"
+                android:title="@string/s_message_move_all_to_inbox"
+                android:titleCondensed="@string/s_message_move_all_to_inbox"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_move_all_to_newbox"
+                android:icon="@mipmap/ic_message_to_draft"
+                android:title="@string/s_message_move_all_to_newbox"
+                android:titleCondensed="@string/s_message_move_all_to_newbox"
+                app:showAsAction="ifRoom|withText" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mi_mes_box"
+        android:icon="@mipmap/ic_message_view"
+        android:orderInCategory="3"
+        android:title="@string/s_message_box"
+        android:titleCondensed="@string/s_message_box"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/mi_mes_draft"
+                android:icon="@mipmap/ic_message_draft"
+                android:title="@string/s_message_draft"
+                android:titleCondensed="@string/s_message_draft"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_newbox"
+                android:icon="@mipmap/ic_message_newbox"
+                android:title="@string/s_message_newbox"
+                android:titleCondensed="@string/s_message_newbox"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_inbox"
+                android:icon="@mipmap/ic_message_in"
+                android:title="@string/s_message_inbox"
+                android:titleCondensed="@string/s_message_inbox"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_outbox"
+                android:icon="@mipmap/ic_message_out"
+                android:title="@string/s_message_outbox"
+                android:titleCondensed="@string/s_message_outbox"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_sentbox"
+                android:icon="@mipmap/ic_message_sent"
+                android:title="@string/s_message_sentbox"
+                android:titleCondensed="@string/s_message_sentbox"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_favbox"
+                android:icon="@mipmap/ic_message_fav"
+                android:title="@string/s_message_favorbox"
+                android:titleCondensed="@string/s_message_favorbox"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_fio_list_load"
+                android:icon="@mipmap/ic_avatar_unknown"
+                android:title="@string/s_message_fio_list_load"
+                android:titleCondensed="@string/s_message_fio_list_load"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_my_avatar"
+                android:icon="@mipmap/ic_avatar_my"
+                android:title="@string/s_message_my_avatar"
+                android:titleCondensed="@string/s_message_my_avatar"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_my_setting"
+                android:icon="@mipmap/ic_setting"
+                android:title="@string/s_mainmenu_setting"
+                android:titleCondensed="@string/s_mainmenu_setting"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_mes_verifydb"
+                android:icon="@mipmap/ic_message_verifydb"
+                android:title="@string/s_message_verifydb"
+                android:titleCondensed="@string/s_message_verifydb"
+                app:showAsAction="ifRoom|withText" />
+        </menu>
+    </item>
+
+</menu>

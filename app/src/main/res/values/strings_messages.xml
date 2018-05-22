@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="s_message_newbox">Новые</string>
+    <string name="s_message_inbox">Входящие</string>
+    <string name="s_message_outbox">Исходящие</string>
+    <string name="s_message_sentbox">Отправленные</string>
+    <string name="s_message_draft">Черновики</string>
+    <string name="s_message_box">Сообщения</string>
+    <string name="s_message_tmpl">Шаблоны</string>
+    <string name="s_message_favorbox">Избранное</string>
+    <string name="s_message_verifydb">Обслуживание базы</string>
+    <string name="s_message_fio_list_load">Список респондентов</string>
+    <string name="s_message_my_avatar">Аватар</string>
+    
+    <string name="s_message_filter_lbl">Фильтр по значкам</string>
+    <string name="s_message_saveava">Сохранить аватар</string> 
+    <string name="s_message_save">Сохранить</string>
+
+    <string name="s_mes_hdr_newbox">Новoе</string>
+    <string name="s_mes_hdr_inbox">Входящее</string>
+    <string name="s_mes_hdr_outbox">Исходящее</string>
+    <string name="s_mes_hdr_sentbox">Отправленное</string>
+    <string name="s_mes_hdr_draft">Черновик</string>
+    <string name="s_mes_hdr_tmpl">Шаблон</string>
+
+    <string name="s_message_new">Новое</string>
+    <string name="s_message_action">Действия</string>
+    <string name="s_message_send_all">Послать все</string>
+    <string name="s_message_send_selected">Послать сообщение</string>
+    <string name="s_message_receive_all">Принять все</string>
+    <string name="s_message_delete_all">Удалить все</string>
+    <string name="s_message_move_all_to_inbox">Переместить все во входящие</string>
+    <string name="s_message_move_all_to_newbox">Переместить все в новые</string>
+    <string name="s_message_delete_selected">Удалить сообщение</string>
+    <string name="s_message_copy_to_draft">Копировать в черновики</string>
+    <string name="s_message_copy_to_fav">Копировать в избранное</string>
+    <string name="s_message_copy_to_draft_and_open">Копировать и открыть</string>
+    <string name="s_message_copy_drasft_to_draft">Скопировать черновик</string>
+    <string name="s_message_move_to_draft">Переместить в черновики</string>
+    
+    <string name="s_message_set_clr">Цвет сообщения</string>
+    <string name="s_message_set_lbl">Значок сообщения</string>
+
+    <string name="s_message_move_all_to_inbox_confirm">Переместить все сообщения во входящие ?</string>
+    <string name="s_message_move_all_to_newbox_confirm">Переместить все сообщения в новые ?</string>
+    <string name="s_message_send">Послать сообщение</string>
+    <string name="s_message_send_confirm_all">Послать все сообщения ?</string>
+    <string name="s_message_savedraft">Сохранить сообщение</string>
+    <string name="s_message_image">Изображение</string>
+    <string name="s_message_delete_draft">Удалить сообщение</string>
+    <string name="s_message_delete_confirm_one">Удалить сообщение ?</string>
+    <string name="s_message_delete_confirm_all">Удалить все сообщения ?</string>
+    <string name="s_message_clear_attachment_confirm">Стереть вложение ?</string>
+    <string name="s_message_other">Редактирование</string>
+    <string name="s_message_template">Текст из шаблона</string>
+    <string name="s_message_choice_template_header">Выберите шаблон</string>
+    <string name="s_message_choice_template_fio">Выберите получателей</string>
+    <string name="s_message_choice_clr">Выберите цвет</string>
+    <string name="s_message_choice_lbl">Выберите значок</string>
+    
+    <string name="s_no_request_image_from_gallery">Не удалось получить снимок из галереи. Попробуйте еще раз . . .  </string>
+    <string name="s_no_prepate_after_crop">Не удалось получить снимок после кадрирования. Попробуйте еще раз . . .  </string>
+
+
+    <string name="s_message_list_empty">Сообщений нет</string>
+    <string name="s_message_title">Заголовок</string>
+    <string name="s_message_text">Содержание</string>
+
+    <string name="s_picture_take">Сделать фото</string>
+    <string name="s_picture_choice">Выбрать изображение</string>
+    <string name="s_picture_clear">Стереть изображение</string>
+    <string name="s_picture_crop">Обрезать изображение</string>
+    <string name="s_message_att_export">Выгрузить вложение</string>
+    <string name="s_message_att_import">Загрузить вложение</string>
+    <string name="s_message_att_clear">Стереть вложение</string>
+    <string name="s_picture_rotate_left">Повернуть влево</string>
+    <string name="s_picture_rotate_right">Повернуть вправо</string>
+    <string name="s_picture_make_curcle">Сделать круглой</string>
+    <string name="s_picture_reduce">Уменьшить разрешение</string>
+    <string name="s_picture_reduce_close">Закрыть</string>
+    <string name="s_picture_reduce_image">Уменьшить</string>
+    <string name="s_picture_reduce_enb">Для уменьшения разрешения изображения нажмите соответствующую кнопку</string>
+    <string name="s_picture_reduce_dsb">Уменьшать изображение нет смысла</string>
+    <string name="s_picture_reduce_want">Если уменьшить разрешение в 2 раза,то\n        
+параметры изображения будут:\n</string>
+    
+    <string name="s_reduce_1">Параметры изображения :\n
+Размер по X - 0000\n 
+Размер по Y - 0000\n
+Занимает памяти, кб - 00000\n
+Размер в сообщении, кб - 0000\n</string>  
+
+        <string name="s_reduce_3"> 
+Размер по X - 0000\n 
+Размер по X - 0000\n 
+Размер по Y - 0000\n
+Занимает памяти, кб - 00000\n
+Размер в сообщении, кб - 0000\n</string>
+
+    <string name="s_delete_complete">Удаление записей и сжатие базы завершено</string>
+    <string name="s_export_complete">Экспорт завершён</string>
+    <string name="s_import_complete">"Импорт завершён "</string>
+    <string name="s_loading_complete">Загрузка завершена</string>
+    <string name="s_messeges_sent">"Отправлено сообщений - "</string>
+    <string name="s_receive_messages">"Принято сообщений "</string>
+    <string name="s_messages_sended">Сообщения с сервера получены \n Обработка</string>
+    <string name="s_message_sending">"Отправка сообщения "</string>
+    <string name="s_compress_started">Начато сжатие базы данных</string>
+    <string name="s_message_edit">Редактирование</string>
+    <string name="s_reg_gcm_verify">Проверить статус регистрации</string>
+    <string name="s_reg_gcm_action">Регистрация системы уведомлений</string>
+
+
+</resources>

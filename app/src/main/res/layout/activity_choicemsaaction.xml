@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv29"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:scaleType="fitStart"
+        android:src="@drawable/splitter_vertical"
+        android:paddingTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/ly_msa_picture_export"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/ib_msa_picture_export"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_message_att_export" />
+
+        <TextView
+            android:id="@+id/tv_msa_picture_export"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:elevation="1dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/s_message_att_export"
+            android:textAlignment="gravity" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv20"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:scaleType="fitStart"
+        android:src="@drawable/splitter_vertical" />
+
+    <LinearLayout
+        android:id="@+id/ly_msa_send_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <ImageButton
+            android:id="@+id/ib_msa_send_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@mipmap/ic_message_send" />
+
+        <TextView
+            android:id="@+id/tv_msa_send_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/s_message_send_selected"
+            android:textAlignment="gravity"
+            android:paddingRight="16dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:scaleType="fitStart"
+        android:src="@drawable/splitter_vertical" />
+
+    <LinearLayout
+        android:id="@+id/ly_msa_move_to_draft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_msa_move_to_draft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@mipmap/ic_message_to_draft" />
+
+        <TextView
+            android:id="@+id/tv_msa_move_to_draft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/s_message_move_to_draft"
+            android:textAlignment="gravity"
+            android:paddingRight="16dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv40"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:scaleType="fitStart"
+        android:src="@drawable/splitter_vertical" />
+
+    <LinearLayout
+        android:id="@+id/ly_msa_copy_to_draft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_msa_copy_to_draft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@mipmap/ic_message_copy_to_draft" />
+
+        <TextView
+            android:id="@+id/tv_msa_copy_to_draft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/s_message_copy_to_draft"
+            android:textAlignment="gravity"
+            android:paddingRight="16dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv41"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:scaleType="fitStart"
+        android:src="@drawable/splitter_vertical" />
+
+    <LinearLayout
+        android:id="@+id/ly_msa_copy_to_fav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <ImageButton
+            android:id="@+id/ib_msa_copy_to_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@mipmap/ic_message_copy_to_fav" />
+
+        <TextView
+            android:id="@+id/tv_msa_copy_to_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/s_message_copy_to_fav"
+            android:textAlignment="gravity"
+            android:paddingRight="16dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv42"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:scaleType="fitStart"
+        android:src="@drawable/splitter_vertical" />
+
+    <LinearLayout
+        android:id="@+id/ly_msa_copy_to_draft_and_open"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <ImageButton
+            android:id="@+id/ib_msa_copy_to_draft_and_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@mipmap/ic_message_copy_to_draft_and_open" />
+
+        <TextView
+            android:id="@+id/tv_msa_copy_to_draft_and_open"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/s_message_copy_to_draft_and_open"
+            android:textAlignment="gravity"
+            android:paddingRight="16dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv43"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:scaleType="fitStart"
+        android:src="@drawable/splitter_vertical" />
+
+    <LinearLayout
+        android:id="@+id/ly_msa_delete_selected"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <ImageButton
+            android:id="@+id/ib_msa_delete_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@mipmap/ic_message_delete_selected" />
+
+        <TextView
+            android:id="@+id/tv_msa_delete_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/s_message_delete_selected"
+            android:textAlignment="gravity"
+            android:paddingRight="16dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

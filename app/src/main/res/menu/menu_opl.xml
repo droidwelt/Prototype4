@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mi_opl_download"
+        android:icon="@mipmap/ic_exchange_transfer"
+        android:title="@string/action_refresh_oplata"
+        android:titleCondensed="@string/action_refresh_oplata"
+        app:showAsAction="always|withText" />
+
+</menu>

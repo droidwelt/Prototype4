@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- View styles -->
+        <attr name="textSmall" format="reference" />
+        <attr name="textMedium" format="reference" />
+        <attr name="textLarge" format="reference" />
+        <attr name="textTitle" format="reference" />
+        <attr name="textLabel" format="reference" />
+        <attr name="textInput" format="reference" />
+        <attr name="textTableHeader" format="reference" />
+
+
+</resources>

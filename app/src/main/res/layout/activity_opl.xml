@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".OplActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/tb_opl"
+                    style="?textSmall"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    app:contentInsetStart="0dp"
+                    app:title=" ">
+
+                    <ImageButton
+                        android:id="@+id/ib_opl_mainmenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_transparent"
+                        android:elevation="1dp"
+                        app:srcCompat="@mipmap/ic_mainmenu" />
+
+                    <TextView
+                        style="?textTitle"
+                        android:text="@string/header_oplat" />
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_OplLastLoad"
+            style="?textSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main"
+            android:padding="4dp"
+            tools:text="Small Text" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <EditText
+            android:id="@+id/editText_opl_Filter"
+            style="?textInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:ems="10"
+            android:hint="@string/s_search" />
+
+        <ImageView
+            android:id="@+id/iv_mesitem_filetype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_opl_1"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="6"
+                android:text="@string/report_opl_clt" />
+
+            <TextView
+                android:id="@+id/text_opl_2"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:text="@string/report_opl_date" />
+
+            <TextView
+                android:id="@+id/text_opl_3"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="@string/report_opl_name" />
+
+            <TextView
+                android:id="@+id/text_opl_4"
+                style="?textTableHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="9"
+                android:gravity="right"
+                android:text="@string/report_opl_sum" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_opl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

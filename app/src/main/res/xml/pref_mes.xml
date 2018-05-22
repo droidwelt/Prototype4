@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="ПОВЕДЕНИЕ ПРОГРАММЫ">
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/theme_list"
+            android:entryValues="@array/theme_val"
+            android:key="font_size"
+            android:summary="@string/s_pref_theme_summary"
+            android:title="@string/s_pref_theme_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="save_fio_id"
+            android:summary="Запоминать пользователя после идентификации, чтобы не проходить идентификацию каждый раз при входе  в программу"
+            android:title="Запоминать пользователя" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="СООБЩЕНИЯ">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="mes_fab_key"
+            android:order="1"
+            android:summary="Показывать кнопку добавить новое сообщение в списке записей"
+            android:title="Кнопка Новое сообщение" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="download_onfirstrecord"
+            android:order="2"
+            android:summary="Загружать новые входящие сообщения при начале просмотра или при показе первой записи"
+            android:title="Подзагрузка входящих" />
+        <EditTextPreference
+            android:defaultValue="100"
+            android:key="download_kvo"
+            android:order="3"
+            android:summary="Загружать за один раз не более указанного числа сообщений"
+            android:title="Количество загружаемых" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="download_attachments"
+            android:order="4"
+            android:summary="Загружать вложения (изображения) при приеме входящих сообщений"
+            android:title="Загружать вложения" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="download_att_auto_wifi"
+            android:order="5"
+            android:summary="Загружать вложения при просмотрте при включенном WiFi"
+            android:title="Автозагрузка вложений по WiFi" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="upload_immediately"
+            android:order="6"
+            android:summary="Отправлять сообщения немедлено, если есть связь"
+            android:title="Отправлять немедлено" />
+        <EditTextPreference
+            android:defaultValue="1000"
+            android:key="download_dates"
+            android:order="7"
+            android:summary="Загружать сообщения за указанное число дней"
+            android:title="Новизна загружаемых" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="verify_old_message"
+            android:order="8"
+            android:summary="Предупреждать о сообщениях с датой более выбранного числа дней загрузки"
+            android:title="Старые сообщения" />
+        <EditTextPreference
+            android:defaultValue="20"
+            android:key="download_maxsize"
+            android:order="9"
+            android:summary="Размер вложения в сообщение не может быть более указанного числа Мб"
+            android:title="Ограничение размера вложений" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

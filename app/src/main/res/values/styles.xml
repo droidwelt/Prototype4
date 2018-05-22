@@ -1,0 +1,348 @@
+<resources>
+    <!--  <item name="android:background">@drawable/textview_border</item> -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/list_background_selector</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--   <item name="drawerArrowStyle">@style/DrawerArrowStyle</item> -->
+
+    <style name="AppTheme.Dialog" parent="@style/Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:activatedBackgroundIndicator">@drawable/list_background_selector</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+
+    <style name="AppTheme.AppBarOverlay2" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionBarSize">40dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AlertDialogColorButton" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:buttonBarPositiveButtonStyle">@style/RedButton</item>
+    </style>
+
+    <style name="RedButton" parent="android:Widget.DeviceDefault.Button.Borderless">
+        <item name="android:textColor">@color/c_red</item>
+    </style>
+
+    <!--
+   <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+       <item name="spinBars">true</item>
+       <item name="color">@android:color/white</item>
+   </style>
+    -->
+
+
+    <!--  Общие стили  -->
+    <style name="AStyle_Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/background_transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AStyle_tv_Label" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_output</item>
+    </style>
+
+    <style name="AStyle_tv_Small" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_output</item>
+    </style>
+
+    <style name="AStyle_tv_Medium" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_output</item>
+    </style>
+
+    <style name="AStyle_tv_Large" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_output</item>
+    </style>
+
+    <style name="AStyle_tv_Title" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorHeaderTitle</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+
+    <style name="AStyle_et" parent="AppTheme">
+        <item name="android:textColor">@color/color_input</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:colorBackground">@color/color_input_background</item>
+    </style>
+
+
+    <!--  000000000000000000000000000000000000000000000000000000000000000000000000000000 -->
+    <style name="AStyle_tv_TableHeader_0" parent="AStyle_tv_Small_0">
+        <item name="android:background">@color/background_main</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="AStyle_tv_Label_0" parent="AStyle_tv_Label">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="AStyle_tv_Small_0" parent="AStyle_tv_Small">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="AStyle_tv_Medium_0" parent="AStyle_tv_Medium">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AStyle_tv_Large_0" parent="AStyle_tv_Large">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AStyle_tv_Title_0" parent="AStyle_tv_Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AStyle_et_0" parent="AStyle_et">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--  111111111111111111111111111111111111111111111111111111111111111111111111 -->
+    <style name="AStyle_tv_TableHeader_1" parent="AStyle_tv_Small_1">
+        <item name="android:background">@color/background_main</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="AStyle_tv_Label_1" parent="AStyle_tv_Label">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AStyle_tv_Small_1" parent="AStyle_tv_Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AStyle_tv_Medium_1" parent="AStyle_tv_Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AStyle_tv_Large_1" parent="AStyle_tv_Large">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AStyle_tv_Title_1" parent="AStyle_tv_Title">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="AStyle_et_1" parent="AStyle_et">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!--  2222222222222222222222222222222222222222222222222222222222222222222222 -->
+    <style name="AStyle_tv_TableHeader_2" parent="AStyle_tv_Small_2">
+        <item name="android:background">@color/background_main</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="AStyle_tv_Label_2" parent="AStyle_tv_Label">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AStyle_tv_Small_2" parent="AStyle_tv_Small">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AStyle_tv_Medium_2" parent="AStyle_tv_Medium">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AStyle_tv_Large_2" parent="AStyle_tv_Large">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="AStyle_tv_Title_2" parent="AStyle_tv_Title">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="AStyle_et_2" parent="AStyle_et">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <!--  33333333333333333333333333333333333333333333333333333333 -->
+    <style name="AStyle_tv_TableHeader_3" parent="AStyle_tv_Small_3">
+        <item name="android:background">@color/background_main</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="AStyle_tv_Label_3" parent="AStyle_tv_Label">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="AStyle_tv_Small_3" parent="AStyle_tv_Small">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="AStyle_tv_Medium_3" parent="AStyle_tv_Medium">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="AStyle_tv_Large_3" parent="AStyle_tv_Large">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="AStyle_tv_Title_3" parent="AStyle_tv_Title">
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="AStyle_et_3" parent="AStyle_et">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+
+    <!--  Это переключаемые темы  -->
+    <style name="AppTheme.Small">
+        <item name="textSmall">@style/AStyle_tv_Small_0</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_0</item>
+        <item name="textLarge">@style/AStyle_tv_Large_0</item>
+        <item name="textTitle">@style/AStyle_tv_Title_0</item>
+        <item name="textLabel">@style/AStyle_tv_Label_0</item>
+        <item name="textInput">@style/AStyle_et_0</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_0</item>
+    </style>
+
+
+    <style name="AppTheme.Medium">
+        <item name="textSmall">@style/AStyle_tv_Small_1</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_1</item>
+        <item name="textLarge">@style/AStyle_tv_Large_1</item>
+        <item name="textTitle">@style/AStyle_tv_Title_1</item>
+        <item name="textLabel">@style/AStyle_tv_Label_1</item>
+        <item name="textInput">@style/AStyle_et_1</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_1</item>
+    </style>
+
+    <style name="AppTheme.Large">
+        <item name="textSmall">@style/AStyle_tv_Small_2</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_2</item>
+        <item name="textLarge">@style/AStyle_tv_Large_2</item>
+        <item name="textTitle">@style/AStyle_tv_Title_2</item>
+        <item name="textLabel">@style/AStyle_tv_Label_2</item>
+        <item name="textInput">@style/AStyle_et_2</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_2</item>
+    </style>
+
+    <style name="AppTheme.Huge">
+        <item name="textSmall">@style/AStyle_tv_Small_3</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_3</item>
+        <item name="textLarge">@style/AStyle_tv_Large_3</item>
+        <item name="textTitle">@style/AStyle_tv_Title_3</item>
+        <item name="textLabel">@style/AStyle_tv_Label_3</item>
+        <item name="textInput">@style/AStyle_et_3</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_3</item>
+    </style>
+
+
+    <style name="AppTheme.Dialog.Small">
+        <item name="textSmall">@style/AStyle_tv_Small_0</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_0</item>
+        <item name="textLarge">@style/AStyle_tv_Large_0</item>
+        <item name="textTitle">@style/AStyle_tv_Title_0</item>
+        <item name="textLabel">@style/AStyle_tv_Label_0</item>
+        <item name="textInput">@style/AStyle_et_0</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_0</item>
+    </style>
+
+
+    <style name="AppTheme.Dialog.Medium">
+        <item name="textSmall">@style/AStyle_tv_Small_1</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_1</item>
+        <item name="textLarge">@style/AStyle_tv_Large_1</item>
+        <item name="textTitle">@style/AStyle_tv_Title_1</item>
+        <item name="textLabel">@style/AStyle_tv_Label_1</item>
+        <item name="textInput">@style/AStyle_et_1</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_1</item>
+    </style>
+
+    <style name="AppTheme.Dialog.Large">
+        <item name="textSmall">@style/AStyle_tv_Small_2</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_2</item>
+        <item name="textLarge">@style/AStyle_tv_Large_2</item>
+        <item name="textTitle">@style/AStyle_tv_Title_2</item>
+        <item name="textLabel">@style/AStyle_tv_Label_2</item>
+        <item name="textInput">@style/AStyle_et_2</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_2</item>
+    </style>
+
+    <style name="AppTheme.Dialog.Huge">
+        <item name="textSmall">@style/AStyle_tv_Small_3</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_3</item>
+        <item name="textLarge">@style/AStyle_tv_Large_3</item>
+        <item name="textTitle">@style/AStyle_tv_Title_3</item>
+        <item name="textLabel">@style/AStyle_tv_Label_3</item>
+        <item name="textInput">@style/AStyle_et_3</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_3</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Small">
+        <item name="textSmall">@style/AStyle_tv_Small_0</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_0</item>
+        <item name="textLarge">@style/AStyle_tv_Large_0</item>
+        <item name="textTitle">@style/AStyle_tv_Title_0</item>
+        <item name="textLabel">@style/AStyle_tv_Label_0</item>
+        <item name="textInput">@style/AStyle_et_0</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_0</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar.Medium">
+        <item name="textSmall">@style/AStyle_tv_Small_1</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_1</item>
+        <item name="textLarge">@style/AStyle_tv_Large_1</item>
+        <item name="textTitle">@style/AStyle_tv_Title_1</item>
+        <item name="textLabel">@style/AStyle_tv_Label_1</item>
+        <item name="textInput">@style/AStyle_et_1</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_1</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Large">
+        <item name="textSmall">@style/AStyle_tv_Small_2</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_2</item>
+        <item name="textLarge">@style/AStyle_tv_Large_2</item>
+        <item name="textTitle">@style/AStyle_tv_Title_2</item>
+        <item name="textLabel">@style/AStyle_tv_Label_2</item>
+        <item name="textInput">@style/AStyle_et_2</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_2</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Huge">
+        <item name="textSmall">@style/AStyle_tv_Small_3</item>
+        <item name="textMedium">@style/AStyle_tv_Medium_3</item>
+        <item name="textLarge">@style/AStyle_tv_Large_3</item>
+        <item name="textTitle">@style/AStyle_tv_Title_3</item>
+        <item name="textLabel">@style/AStyle_tv_Label_3</item>
+        <item name="textInput">@style/AStyle_et_3</item>
+        <item name="textTableHeader">@style/AStyle_tv_TableHeader_3</item>
+    </style>
+
+
+</resources>

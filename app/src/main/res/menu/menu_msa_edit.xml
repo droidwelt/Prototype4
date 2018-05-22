@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mi_edit_picturegroup"
+        android:icon="@mipmap/ic_photo_menu"
+        android:orderInCategory="1"
+        android:title="@string/s_message_image"
+        android:titleCondensed="@string/s_message_image"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/mi_edit_picture_choice"
+                android:icon="@mipmap/ic_photo_choice"
+                android:orderInCategory="1"
+                android:title="@string/s_picture_choice"
+                android:titleCondensed="@string/s_picture_choice"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_picture_takephoto"
+                android:icon="@mipmap/ic_photo"
+                android:orderInCategory="2"
+                android:title="@string/s_picture_take"
+                android:titleCondensed="@string/s_picture_take"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_picture_crop"
+                android:icon="@mipmap/ic_photo_crop"
+                android:orderInCategory="3"
+                android:title="@string/s_picture_crop"
+                android:titleCondensed="@string/s_picture_crop"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_picture_rotate_left"
+                android:icon="@mipmap/ic_photo_rotate_left"
+                android:orderInCategory="5"
+                android:title="@string/s_picture_rotate_left"
+                android:titleCondensed="@string/s_picture_rotate_left"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_picture_rotate_right"
+                android:icon="@mipmap/ic_photo_rotate_rigth"
+                android:orderInCategory="6"
+                android:title="@string/s_picture_rotate_right"
+                android:titleCondensed="@string/s_picture_rotate_right"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_picture_reduce"
+                android:icon="@mipmap/ic_photo_resuce"
+                android:orderInCategory="7"
+                android:title="@string/s_picture_reduce"
+                android:titleCondensed="@string/s_picture_reduce"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_picture_clear"
+                android:icon="@mipmap/ic_photo_clear"
+                android:orderInCategory="9"
+                android:title="@string/s_picture_clear"
+                android:titleCondensed="@string/s_picture_clear"
+                app:showAsAction="ifRoom|withText" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mi_edit_othergroup"
+        android:icon="@mipmap/ic_message_other"
+        android:orderInCategory="2"
+        android:title="@string/s_message_other"
+        android:titleCondensed="@string/s_message_other"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/mi_edit_picture_export"
+                android:icon="@mipmap/ic_message_att_export"
+                android:orderInCategory="1"
+                android:title="@string/s_message_att_export"
+                android:titleCondensed="@string/s_message_att_export"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_picture_import"
+                android:icon="@mipmap/ic_message_att_import"
+                android:orderInCategory="2"
+                android:title="@string/s_message_att_import"
+                android:titleCondensed="@string/s_message_att_import"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_attachment_clear"
+                android:icon="@mipmap/ic_message_att_clear"
+                android:orderInCategory="3"
+                android:title="@string/s_message_att_clear"
+                android:titleCondensed="@string/s_message_att_clear"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_template"
+                android:icon="@mipmap/ic_message_template"
+                android:orderInCategory="4"
+                android:title="@string/s_message_template"
+                android:titleCondensed="@string/s_message_template"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_set_clr"
+                android:icon="@mipmap/ic_edit_set_clr"
+                android:orderInCategory="5"
+                android:title="@string/s_message_set_clr"
+                android:titleCondensed="@string/s_message_set_clr"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_set_lbl"
+                android:icon="@mipmap/ic_edit_set_lbl"
+                android:orderInCategory="5"
+                android:title="@string/s_message_set_lbl"
+                android:titleCondensed="@string/s_message_set_lbl"
+                app:showAsAction="ifRoom|withText" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mi_edit_savegroup"
+        android:icon="@mipmap/ic_edit_savegroup"
+        android:orderInCategory="3"
+        android:title="@string/s_message_action"
+        android:titleCondensed="@string/s_message_action"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/mi_edit_send"
+                android:icon="@mipmap/ic_message_send"
+                android:orderInCategory="1"
+                android:title="@string/s_message_send"
+                android:titleCondensed="@string/s_message_send"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_savedraft"
+                android:icon="@mipmap/ic_message_savedraft"
+                android:orderInCategory="2"
+                android:title="@string/s_message_savedraft"
+                android:titleCondensed="@string/s_message_savedraft"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_copytoraft"
+                android:icon="@mipmap/ic_message_copy_to_draft"
+                android:orderInCategory="3"
+                android:title="@string/s_message_copy_drasft_to_draft"
+                android:titleCondensed="@string/s_message_copy_drasft_to_draft"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_copytofav"
+                android:icon="@mipmap/ic_message_copy_to_fav"
+                android:orderInCategory="4"
+                android:title="@string/s_message_copy_to_fav"
+                android:titleCondensed="@string/s_message_copy_to_fav"
+                app:showAsAction="ifRoom|withText" />
+            <item
+                android:id="@+id/mi_edit_deletedraft"
+                android:alphabeticShortcut="s"
+                android:icon="@mipmap/ic_message_deletedraft"
+                android:orderInCategory="5"
+                android:title="@string/s_message_delete_draft"
+                android:titleCondensed="@string/s_message_delete_draft"
+                app:showAsAction="ifRoom|withText" />
+        </menu>
+    </item>
+
+</menu>

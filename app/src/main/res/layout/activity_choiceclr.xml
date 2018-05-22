@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_color_test"
+            style="?textLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="Заголовок сообщения будет выглядеть так"
+            android:padding="16dp" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/clr0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+
+            <ImageView
+                android:id="@+id/iv11"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ic_color_empty" />
+
+            <ImageView
+                android:id="@+id/iv12"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+            
+            <ImageView
+                android:id="@+id/iv13"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv20"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/clr4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+
+            <ImageView
+                android:id="@+id/iv21"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+
+            <ImageView
+                android:id="@+id/iv22"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+            
+             <ImageView
+                android:id="@+id/iv23"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/clr8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+
+            <ImageView
+                android:id="@+id/iv31"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+
+            <ImageView
+                android:id="@+id/iv32"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+            
+             <ImageView
+                android:id="@+id/iv33"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv40"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/clr12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+
+            <ImageView
+                android:id="@+id/iv41"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+
+            <ImageView
+                android:id="@+id/iv42"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr14"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@color/background_transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+            
+               <ImageView
+                android:id="@+id/iv43"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+            
+            <ImageButton
+                android:id="@+id/clr15"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@color/background_transparent"
+                android:scaleType="center"
+                android:src="@mipmap/ic_color_empty" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</TableLayout>

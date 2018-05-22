@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/mi_main_logput"
+            android:icon="@mipmap/ic_exit"
+            android:orderInCategory="1"
+            android:title="@string/s_mainmenu_logout"
+            android:titleCondensed="@string/s_mainmenu_logout" />
+        <item
+            android:id="@+id/mi_main_setting"
+            android:icon="@mipmap/ic_setting"
+            android:orderInCategory="2"
+            android:title="@string/s_mainmenu_setting"
+            android:titleCondensed="@string/s_mainmenu_setting" />
+        <item
+            android:id="@+id/mi_main_register_db"
+            android:icon="@mipmap/ic_registation_system"
+            android:orderInCategory="3"
+            android:title="@string/s_mainmenu_register_db"
+            android:titleCondensed="@string/s_mainmenu_register_db" />
+        <item
+            android:id="@+id/mi_main_about"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:orderInCategory="5"
+            android:title="@string/s_mainmenu_about"
+            android:titleCondensed="@string/s_mainmenu_about" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mi_mss_picture_export"
+        android:icon="@mipmap/ic_message_att_export"
+        android:orderInCategory="4"
+        android:title="@string/s_message_att_export"
+        android:titleCondensed="@string/s_message_att_export"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/mi_mss_send_selected"
+        android:icon="@mipmap/ic_message_send"
+        android:title="@string/s_message_send_selected"
+        android:titleCondensed="@string/s_message_send_selected"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/mi_mss_move_to_draft"
+        android:icon="@mipmap/ic_message_to_draft"
+        android:title="@string/s_message_move_to_draft"
+        android:titleCondensed="@string/s_message_move_to_draft"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/mi_mss_copy_to_draft"
+        android:icon="@mipmap/ic_message_copy_to_draft"
+        android:title="@string/s_message_copy_to_draft"
+        android:titleCondensed="@string/s_message_copy_to_draft"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/mi_mss_copy_to_fav"
+        android:icon="@mipmap/ic_message_copy_to_fav"
+        android:title="@string/s_message_copy_to_fav"
+        android:titleCondensed="@string/s_message_copy_to_fav"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/mi_mss_copy_to_draft_and_open"
+        android:icon="@mipmap/ic_message_copy_to_draft_and_open"
+        android:title="@string/s_message_copy_to_draft_and_open"
+        android:titleCondensed="@string/s_message_copy_to_draft_and_open"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/mi_mss_delete_selected"
+        android:icon="@mipmap/ic_message_delete_selected"
+        android:title="@string/s_message_delete_selected"
+        android:titleCondensed="@string/s_message_delete_selected"
+        app:showAsAction="ifRoom|withText" />
+
+
+</menu>

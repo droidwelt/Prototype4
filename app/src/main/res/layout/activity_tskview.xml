@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_tskview_save"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_button"
+        android:enabled="false"
+        android:text="сохранить" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_mesitem_filetype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/splitter_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tskview_label_tsk_ok"
+                    style="?textLabel"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:text="@string/report_tsk_ok"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tskview_textView_tsk_ok"
+                    style="?textMedium"
+                    android:layout_width="match_parent"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:selectAllOnFocus="false" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ImageView08"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/splitter_horisontal" />
+
+            <ImageButton
+                android:id="@+id/button_tskview_choicestate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:background="@color/background_transparent"
+                android:src="@mipmap/ic_edit_set_lbl" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tskview_label_tsk_srok"
+            style="?textLabel"
+            android:text="@string/report_tsk_srok"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tskview_textView_tsk_srok"
+            style="?textMedium"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        <TextView
+            android:id="@+id/tskview_label_tsk_ready"
+            style="?textLabel"
+            android:text="@string/report_tsk_ready"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tskview_textView_tsk_ready"
+            style="?textMedium"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        <TextView
+            android:id="@+id/tskview_label_tsk_content"
+            style="?textLabel"
+            android:text="@string/report_tsk_content"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tskview_textView_tsk_content"
+            style="?textMedium"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        <TextView
+            android:id="@+id/tskview_label_tsk_comment"
+            style="?textLabel"
+            android:text="@string/report_tsk_comment"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/tskview_textView_tsk_comment"
+            style="?textMedium"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:enabled="true"
+            android:hint="@string/report_tsk_comment_hint"
+            android:inputType="textMultiLine" >
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+</LinearLayout>
